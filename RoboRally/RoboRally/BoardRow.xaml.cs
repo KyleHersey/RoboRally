@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace RoboRally
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for BoardRow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BoardRow : UserControl
     {
-        public MainWindow()
+        public BoardRow()
         {
             InitializeComponent();
-            populateBoards();
-
-        }
-
-        public void populateBoards()
-        {
-            foreach (Board board in mainGrid.Children)
-            {
-                board.PopulateBoard();
-            }
         }
     }
 }
