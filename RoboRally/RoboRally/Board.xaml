@@ -23,16 +23,16 @@
         </Grid.RowDefinitions>
         
         <local:BoardRow x:Name="Row0" Grid.Row="0"/>
-        <local:BoardRow x:Name="Row2" Grid.Row="1"/>
-        <local:BoardRow x:Name="Row3" Grid.Row="2"/>
-        <local:BoardRow x:Name="Row4" Grid.Row="3"/>
-        <local:BoardRow x:Name="Row5" Grid.Row="4"/>
-        <local:BoardRow x:Name="Row6" Grid.Row="5"/>
-        <local:BoardRow x:Name="Row7" Grid.Row="6"/>
-        <local:BoardRow x:Name="Row8" Grid.Row="7"/>
-        <local:BoardRow x:Name="Row9" Grid.Row="8"/>
-        <local:BoardRow x:Name="Row10" Grid.Row="9"/>
-        <local:BoardRow x:Name="Row11" Grid.Row="10"/>
-        <local:BoardRow x:Name="Row12" Grid.Row="11"/>
+        <local:BoardRow x:Name="Row1" Grid.Row="1"/>
+        <local:BoardRow x:Name="Row2" Grid.Row="2"/>
+        <local:BoardRow x:Name="Row3" Grid.Row="3"/>
+        <local:BoardRow x:Name="Row4" Grid.Row="4"/>
+        <local:BoardRow x:Name="Row5" Grid.Row="5"/>
+        <local:BoardRow x:Name="Row6" Grid.Row="6"/>
+        <local:BoardRow x:Name="Row7" Grid.Row="7"/>
+        <local:BoardRow x:Name="Row8" Grid.Row="8"/>
+        <local:BoardRow x:Name="Row9" Grid.Row="9"/>
+        <local:BoardRow x:Name="Row10" Grid.Row="10"/>
+        <local:BoardRow x:Name="Row11" Grid.Row="11"/>
     </Grid>
 </UserControl>

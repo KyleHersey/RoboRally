@@ -26,34 +26,12 @@ namespace RoboRally
         {
             InitializeComponent();
             populateBoards();
-            rob = new Robot(2, 2, false, direction.DOWN);
-
-            this.KeyDown += new KeyEventHandler(MainWindow_KeyDown);
-        }
-
-        void MainWindow_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.Key)
-            {
-                case Key.W:
-                    rob.moveForward();
-                    break;
-                case Key.A:
-                    rob.turnLeft();
-                    break;
-                case Key.D:
-                    rob.turnRight();
-                    break;
-            }
-
-            updateBoard(rob);
         }
 
         public void updateBoard(Robot rob)
         {
-            int row = Convert.ToInt32(rob.coords.X);
-            int column = Convert.ToInt32(rob.coords.Y);
-
+            int row = Convert.ToInt32(rob.coordX);
+            int column = Convert.ToInt32(rob.coordY);
            
         }
 

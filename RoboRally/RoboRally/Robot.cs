@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
+using System.Drawing;
 
 namespace RoboRally
 {
@@ -11,8 +11,13 @@ namespace RoboRally
     public class Robot
     {
         public int damage;
-        public Point coords;
-        public Point checkpointCoords;
+
+        public int coordX;
+        public int coordY;
+
+        public int checkpointX;
+        public int checkpointY;
+
         public direction dir;
 
         public Robot(int startX, int startY, bool onDeath, direction inputDirection)
@@ -20,8 +25,11 @@ namespace RoboRally
 
             dir = inputDirection;
 
-            coords = new Point(startX, startY);
-            checkpointCoords = new Point(startX, startY);
+            coordX = startX;
+            coordY = startY;
+
+            checkpointX = startX;
+            checkpointY = startY;
 
             if (onDeath)
             {
@@ -78,23 +86,22 @@ namespace RoboRally
 
         public void moveForward()
         {
+            //Console.WriteLine(dir);
             switch (dir)
             {
                 case direction.UP:
-                    coords.Y--;
+                    coordY--;
                     break;
                 case direction.RIGHT:
-                    coords.X++;
+                    coordX++;
                     break;
                 case direction.DOWN:
-                    coords.Y++;
+                    coordY++;
                     break;
                 case direction.LEFT:
-                    coords.X--;
+                    coordX--;
                     break;
             }
-
-            Console.WriteLine(coords);
         }
     }
 }
