@@ -16,29 +16,13 @@ using System.Windows.Shapes;
 namespace RoboRally
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PlayArea.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PlayArea : UserControl
     {
-        Robot rob;
-
-        public MainWindow()
+        public PlayArea()
         {
             InitializeComponent();
-            populateBoards();
-            Deck movementDeck = new Deck();
-        }
-
-        public void updateBoard(Robot rob)
-        {
-            int row = Convert.ToInt32(rob.coordX);
-            int column = Convert.ToInt32(rob.coordY);
-           
-        }
-
-        public void populateBoards()
-        {
-                Board0.PopulateBoard();
         }
     }
 }
