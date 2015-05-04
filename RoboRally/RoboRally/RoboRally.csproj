@@ -56,6 +56,9 @@
     <Compile Include="BoardTile.xaml.cs">
       <DependentUpon>BoardTile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CardChoice.xaml.cs">
+      <DependentUpon>CardChoice.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Deck.cs" />
     <Compile Include="MovementCard.cs" />
     <Compile Include="PlayArea.xaml.cs">
@@ -71,6 +74,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BoardTile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CardChoice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

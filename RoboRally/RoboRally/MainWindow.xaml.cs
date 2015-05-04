@@ -20,20 +20,39 @@ namespace RoboRally
     /// </summary>
     public partial class MainWindow : Window
     {
-        Robot rob;
+        Deck movementDeck;
 
         public MainWindow()
         {
             InitializeComponent();
             populateBoards();
-            Deck movementDeck = new Deck();
+
+            bool gameOver = false;
+
+            movementDeck = new Deck();
+
+            while (!gameOver)
+            {
+                gameOver = doTurn();
+            }
         }
 
-        public void updateBoard(Robot rob)
+        public bool doTurn()
         {
-            int row = Convert.ToInt32(rob.coordX);
-            int column = Convert.ToInt32(rob.coordY);
-           
+            bool gameOver = false;
+            movementDeck.shuffle();
+            //deal cards
+            //players select moves at this time
+            //get player moves
+            //perform moves
+            //cleanup
+
+            return gameOver;
+        }
+
+        public void dealCards()
+        {
+
         }
 
         public void populateBoards()
