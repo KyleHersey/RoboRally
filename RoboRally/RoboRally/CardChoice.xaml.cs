@@ -20,11 +20,30 @@ namespace RoboRally
     /// </summary>
     public partial class CardChoice : UserControl
     {
+        public MovementCard loadedCard;
+
         public CardChoice()
         {
             InitializeComponent();
-            Movement.Text = "movement";
-            Priority.Text="50";
+        }
+
+        public CardChoice(MovementCard mc)
+        {
+            InitializeComponent();
+            setCard(mc);
+        }
+
+        public void RemoveCard()
+        {
+            loadedCard = null;
+            Movement.Text = "";
+            Priority.Text = "";
+        }
+
+        public void setCard(MovementCard mc){
+            loadedCard = mc;
+            Movement.Text = Enum.GetName(typeof(moveCard) , loadedCard.movement);
+            Priority.Text = loadedCard.priority.ToString();
         }
     }
 }

@@ -6,9 +6,27 @@ using System.Threading.Tasks;
 
 namespace RoboRally
 {
-    class UserPlayer
+    public class UserPlayer
     {
         Robot rob;
         List<MovementCard> movementCards;
+
+        public UserPlayer(Robot r)
+        {
+            rob = r;
+        }
+
+        public void GetDealt(List<MovementCard> l){
+            movementCards = l;
+        }
+
+        public MovementCard getMovementCard(int i)
+        {
+            if (i >= movementCards.Count)
+            {
+                return null;
+            }
+            return movementCards[i];
+        }
     }
 }

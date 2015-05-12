@@ -10,6 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid x:Name="fiveCards" Grid.Column="0">
             <Grid.ColumnDefinitions>
@@ -19,11 +20,35 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <local:CardChoice x:Name="Card0" Grid.Column="0"/>
-            <local:CardChoice x:Name="Card1" Grid.Column="1"/>
-            <local:CardChoice x:Name="Card2" Grid.Column="2"/>
-            <local:CardChoice x:Name="Card3" Grid.Column="3"/>
-            <local:CardChoice x:Name="Card4" Grid.Column="4"/>
+            <local:CardChoice x:Name="Card0" Grid.Column="0" MouseUp="ClickedChoice"/>
+            <local:CardChoice x:Name="Card1" Grid.Column="1" MouseUp="ClickedChoice"/>
+            <local:CardChoice x:Name="Card2" Grid.Column="2" MouseUp="ClickedChoice"/>
+            <local:CardChoice x:Name="Card3" Grid.Column="3" MouseUp="ClickedChoice"/>
+            <local:CardChoice x:Name="Card4" Grid.Column="4" MouseUp="ClickedChoice"/>
+        </Grid>
+        <Grid x:Name="choosableCards" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <local:CardChoice x:Name="choice0" Grid.Column="0" Grid.Row="0" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice1" Grid.Column="1" Grid.Row="0" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice2" Grid.Column="2" Grid.Row="0" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice3" Grid.Column="0" Grid.Row="1" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice4" Grid.Column="1" Grid.Row="1" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice5" Grid.Column="2" Grid.Row="1" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice6" Grid.Column="0" Grid.Row="2" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice7" Grid.Column="1" Grid.Row="2" MouseLeftButtonUp="ClickedChoosable"/>
+            <local:CardChoice x:Name="choice8" Grid.Column="2" Grid.Row="2" MouseLeftButtonUp="ClickedChoosable"/>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Button Content="OK"/>
         </Grid>
     </Grid>
 

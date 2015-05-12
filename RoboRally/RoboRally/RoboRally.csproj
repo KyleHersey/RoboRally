@@ -65,6 +65,7 @@
       <DependentUpon>PlayArea.xaml</DependentUpon>
     </Compile>
     <Compile Include="Robot.cs" />
+    <Compile Include="UserPlayer.cs" />
     <Page Include="Board.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

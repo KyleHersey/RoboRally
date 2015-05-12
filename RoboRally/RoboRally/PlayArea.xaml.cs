@@ -24,5 +24,41 @@ namespace RoboRally
         {
             InitializeComponent();
         }
+
+        public event EventHandler<MouseButtonEventArgs> ClickedOKHandler;
+
+        private void ClickedChoice(object sender, MouseButtonEventArgs e)
+        {
+            CardChoice card = (CardChoice)sender;
+            card.RemoveCard();
+        }
+
+        private void ClickedChoosable(object sender, MouseButtonEventArgs e)
+        {
+            //get clicked choice
+            CardChoice card = (CardChoice)sender;
+
+            //find open choice slot
+            if (Card0.loadedCard == null)
+            {
+                Card0.setCard(card.loadedCard);
+            }
+            else if (Card1.loadedCard == null)
+            {
+                Card1.setCard(card.loadedCard);
+            }
+            else if (Card2.loadedCard == null)
+            {
+                Card2.setCard(card.loadedCard);
+            }
+            else if (Card3.loadedCard == null)
+            {
+                Card3.setCard(card.loadedCard);
+            }
+            else if (Card4.loadedCard == null)
+            {
+                Card4.setCard(card.loadedCard);
+            }
+        }
     }
 }

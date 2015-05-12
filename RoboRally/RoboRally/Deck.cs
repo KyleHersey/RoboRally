@@ -44,7 +44,15 @@ namespace RoboRally
             }
         }
 
-        public void shuffle()
+        public List<MovementCard> DealCards(int i)
+        {
+            List<MovementCard> toReturn = movementCardList.GetRange(0, i);
+            movementCardList.RemoveRange(0, i);
+
+            return toReturn;
+        }
+
+        public void Shuffle()
         {
             List<MovementCard> temp = new List<MovementCard>();
             Random rand = new Random();
