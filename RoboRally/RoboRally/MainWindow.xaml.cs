@@ -27,7 +27,7 @@ namespace RoboRally
             InitializeComponent();
             populateBoards();
 
-            GameMaster gm = new GameMaster(this);
+            gm = new GameMaster(this);
             gm.startGame();
         }
 
@@ -60,9 +60,9 @@ namespace RoboRally
                 Board0.PopulateBoard();
         }
 
-        private void ClickedOK(object sender, RoutedEventArgs e)
+        private void ClickedReady(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Clicked on, and mainwindow saw it");
+            gm.userClickedReady();
         }
     }
 }

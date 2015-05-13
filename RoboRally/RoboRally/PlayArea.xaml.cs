@@ -25,16 +25,14 @@ namespace RoboRally
             InitializeComponent();
         }
 
-        public event EventHandler<RoutedEventArgs> ClickedOKHandler;
-        private void ClickedOK(object sender, RoutedEventArgs e)
+        public event EventHandler<RoutedEventArgs> ClickedReadyHandler;
+        private void ClickedReady(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Clicked ok and playarea saw it");
-            ClickedOKHandler(sender, e);
+            ClickedReadyHandler(sender, e);
         }
 
         private void ClickedChoice(object sender, MouseButtonEventArgs e)
         {
-            Console.WriteLine("Clicked choice and playarea saw it");
             CardChoice card = (CardChoice)sender;
             card.RemoveCard();
         }

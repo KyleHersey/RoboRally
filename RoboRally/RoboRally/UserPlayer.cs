@@ -8,7 +8,7 @@ namespace RoboRally
 {
     public class UserPlayer
     {
-        Robot rob;
+        public Robot rob;
         List<MovementCard> movementCards;
 
         public UserPlayer(Robot r)

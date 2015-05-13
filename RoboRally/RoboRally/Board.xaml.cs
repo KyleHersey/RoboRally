@@ -45,6 +45,10 @@ namespace RoboRally
             }
         }
 
+        public void robotRegisterPhase(Robot rob, MovementCard mc){
+
+        }
+
         public void removeRobot(Robot rob)
         {
             getRow(rob.coordY).getColumn(rob.coordX).removeRobot();

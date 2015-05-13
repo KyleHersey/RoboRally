@@ -48,7 +48,7 @@
             <local:CardChoice x:Name="choice8" Grid.Column="2" Grid.Row="2" MouseLeftButtonUp="ClickedChoosable"/>
         </Grid>
         <Grid Grid.Column="2">
-            <Button Content="OK" Click="ClickedOK"/>
+            <Button Content="Ready" Click="ClickedReady"/>
         </Grid>
     </Grid>
 
