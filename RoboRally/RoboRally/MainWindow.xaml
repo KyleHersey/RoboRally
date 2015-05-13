@@ -9,6 +9,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <local:Board x:Name="Board0" Grid.Row="0"/>
-        <local:PlayArea x:Name="playArea" ClickedOKHandler="clickedOK" Grid.Row="1"/>
+        <local:PlayArea x:Name="playArea" ClickedOKHandler="ClickedOK" Grid.Row="1"/>
     </Grid>
 </Window>

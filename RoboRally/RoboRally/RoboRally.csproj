@@ -60,6 +60,7 @@
       <DependentUpon>CardChoice.xaml</DependentUpon>
     </Compile>
     <Compile Include="Deck.cs" />
+    <Compile Include="GameMaster.cs" />
     <Compile Include="MovementCard.cs" />
     <Compile Include="PlayArea.xaml.cs">
       <DependentUpon>PlayArea.xaml</DependentUpon>
